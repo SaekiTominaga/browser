@@ -1,6 +1,5 @@
 /node_modules/
 
-/packages/bookmarklet/dist/
 /packages/bookmarklet/node_modules/
 
 /packages/userscript/dist/tsconfig.tsbuildinfo

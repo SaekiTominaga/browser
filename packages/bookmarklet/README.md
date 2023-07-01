@@ -1,7 +1,6 @@
 # 自分が使っているブックマークレット
 
-- [Text Fragment (`#:~:text=`)](bookmarklet/textfragment.txt)
-- [Internet Archive - 表示ページ検索](bookmarklet/internetarchive-search.txt)
-- [Amazon.co.jp - 商品ページ URL 正規化](bookmarklet/amazoncojp-urlcanonical.txt)
-- [はてなブックマーク - エントリーページ表示](bookmarklet/hatena-entry.txt)
-- [Twitter - 引用ツイート検索](bookmarklet/twitter-quotetweetsearch.txt)
+- [選択文字列の情報を Scroll To Text Fragment (`#:~:text=`) 用に URL に追加する](dist/textfragment.txt)
+- [表示しているページを Internet Archive で検索する](dist/internetarchive-search.txt)
+- [表示しているページのはてなブックマークエントリーページを表示する](dist/hatena-entry.txt)
+- [Amazon.co.jp の商品ページ URL を正規化する](dist/amazoncojp-urlcanonical.txt)

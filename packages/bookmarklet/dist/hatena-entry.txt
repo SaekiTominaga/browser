@@ -1,0 +1,1 @@
+javascript:"use strict";(()=>{const t="https://b.hatena.ne.jp",o=`${location.host}${location.pathname}${location.search}`;switch(location.protocol){case"https:":window.open(`${t}/entry/s/${o}`);break;case"http:":window.open(`${t}/entry/${o}`);break;default:alert("対応しているプロトコルは https: / http: のみです。")}})();

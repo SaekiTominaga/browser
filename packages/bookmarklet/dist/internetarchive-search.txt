@@ -1,0 +1,1 @@
+javascript:"use strict";"web.archive.org"!==location.host?window.open(`https://web.archive.org/web/*/${location}`):alert("表示しているサイトは Internet Archive 自身です。");
