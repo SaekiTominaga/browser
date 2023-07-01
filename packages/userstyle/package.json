@@ -1,0 +1,7 @@
+{
+	"name": "@browser/userstyle",
+	"private": true,
+	"scripts": {
+		"lint": "stylelint style/*.css"
+	}
+}

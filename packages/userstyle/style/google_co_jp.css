@@ -1,0 +1,5 @@
+/* 検索結果のリンクは常に下線表示する */
+:is(#tads, #tadsb, #res, #rhs, #taw) a,
+:is(#tads, #tadsb, #res, #rhs, #taw) a .LC20lb {
+	text-decoration: underline;
+}

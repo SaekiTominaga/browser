@@ -1,0 +1,9 @@
+{
+	"name": "@browser/userscript",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"lint": "eslint src/*.user.ts"
+	}
+}
