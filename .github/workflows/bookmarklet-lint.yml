@@ -4,12 +4,14 @@ on:
     branches:
       - main
     paths:
+      - 'packages/bookmarklet/src/*.js'
       - 'packages/bookmarklet/build.js'
       - 'packages/bookmarklet/.eslintrc.json'
   push:
     branches:
       - main
     paths:
+      - 'packages/bookmarklet/src/*.js'
       - 'packages/bookmarklet/build.js'
       - 'packages/bookmarklet/.eslintrc.json'
   workflow_dispatch:
