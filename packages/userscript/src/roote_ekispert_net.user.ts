@@ -123,9 +123,9 @@ interface CourseSetting {
 	}
 
 	/* 【検索画面】日付入力欄を <input type="date"> に */
-	const yyyymmElement = <HTMLSelectElement | null>document.getElementById('yyyymm');
-	const dayElement = <HTMLSelectElement | null>document.getElementById('day');
-	const datepickerElement = <HTMLInputElement | null>document.getElementById('datepicker');
+	const yyyymmElement = document.getElementById('yyyymm') as HTMLSelectElement | null;
+	const dayElement = document.getElementById('day') as HTMLSelectElement | null;
+	const datepickerElement = document.getElementById('datepicker') as HTMLInputElement | null;
 	if (yyyymmElement !== null && dayElement !== null && datepickerElement !== null) {
 		console.debug('【検索画面】日付入力欄を <input type="date"> に');
 
@@ -159,7 +159,7 @@ interface CourseSetting {
 
 		const courseSetting: CourseSetting = supportGMgetValue ? window.GM_getValue('COURSE_SETTING', COURSE_SETTING) : COURSE_SETTING;
 		for (const [courseName, checked] of Object.entries(courseSetting)) {
-			const courseCheckboxElement = <HTMLInputElement | null>document.getElementById(courseName);
+			const courseCheckboxElement = document.getElementById(courseName) as HTMLInputElement | null;
 			if (courseCheckboxElement === null) {
 				console.error(`Element: #${courseName} can not found.`);
 			} else {

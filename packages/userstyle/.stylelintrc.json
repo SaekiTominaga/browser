@@ -1,8 +1,9 @@
 {
 	"extends": ["@w0s/stylelint-config"],
 	"rules": {
+		"color-named": null,
 		"declaration-no-important": null,
-		"selector-class-pattern": null,
+		"property-disallowed-list": null,
 		"selector-id-pattern": null,
 		"selector-max-id": null
 	}
