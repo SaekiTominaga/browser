@@ -1,6 +1,7 @@
 {
 	"name": "browser",
 	"scripts": {
+		"format": "prettier -w packages/bookmarklet/src/*.js packages/userscript/src/*.user.ts packages/userstyle/style/*.css",
 		"github-actions-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
@@ -8,6 +9,7 @@
 		"@w0s/stylelint-config": "^1.2.0",
 		"@w0s/tsconfig": "^1.0.1",
 		"eslint": "^8.43.0",
+		"prettier": "^3.2.5",
 		"stylelint": "^15.9.0",
 		"typescript": "^5.0.4",
 		"yaml-lint": "^1.7.0"
