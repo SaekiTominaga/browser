@@ -4,6 +4,7 @@
 		"color-named": null,
 		"declaration-no-important": null,
 		"property-disallowed-list": null,
+		"selector-class-pattern": null,
 		"selector-id-pattern": null,
 		"selector-max-id": null
 	}
