@@ -1,12 +1,16 @@
 {
 	"name": "browser",
+	"scripts": {
+		"github-actions-lint": "yamllint .github/workflows/*.yml"
+	},
 	"devDependencies": {
 		"@w0s/eslint-config": "^2.0.0",
 		"@w0s/stylelint-config": "^1.2.0",
 		"@w0s/tsconfig": "^1.0.1",
 		"eslint": "^8.43.0",
 		"stylelint": "^15.9.0",
-		"typescript": "^5.0.4"
+		"typescript": "^5.0.4",
+		"yaml-lint": "^1.7.0"
 	},
 	"private": true,
 	"workspaces": [
