@@ -4,22 +4,8 @@
 		"es2022": true
 	},
 	"extends": ["@w0s/eslint-config"],
-	"parserOptions": {
-		"ecmaVersion": 2022
-	},
 	"ignorePatterns": ["dist/*.js"],
 	"overrides": [
-		{
-			"files": ["build.js"],
-			"rules": {
-				"no-console": [
-					"warn",
-					{
-						"allow": ["info"]
-					}
-				]
-			}
-		},
 		{
 			"files": ["src/*.js"],
 			"env": {
@@ -29,8 +15,7 @@
 				"sourceType": "script"
 			},
 			"rules": {
-				"no-alert": "off",
-				"strict": ["error", "global"]
+				"no-alert": "off"
 			}
 		}
 	]

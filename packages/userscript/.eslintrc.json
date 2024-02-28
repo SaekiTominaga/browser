@@ -1,22 +1,17 @@
 {
 	"root": true,
 	"env": {
+		"browser": true,
 		"es2022": true
 	},
 	"extends": ["@w0s/eslint-config"],
-	"parserOptions": {
-		"ecmaVersion": 2022
-	},
 	"ignorePatterns": ["dist/*.js"],
+	"parserOptions": {
+		"sourceType": "script"
+	},
 	"overrides": [
 		{
 			"files": ["src/*.user.ts"],
-			"env": {
-				"browser": true
-			},
-			"parserOptions": {
-				"sourceType": "script"
-			},
 			"rules": {
 				"no-console": "off",
 				"strict": ["error", "function"]

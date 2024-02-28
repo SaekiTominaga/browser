@@ -5,13 +5,13 @@
 		"github-actions-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
-		"@w0s/eslint-config": "^2.0.0",
-		"@w0s/stylelint-config": "^1.2.0",
-		"@w0s/tsconfig": "^1.0.1",
-		"eslint": "^8.43.0",
+		"@w0s/eslint-config": "^5.1.0",
+		"@w0s/stylelint-config": "^4.2.0",
+		"@w0s/tsconfig": "^1.4.1",
+		"eslint": "^8.57.0",
 		"prettier": "^3.2.5",
-		"stylelint": "^15.9.0",
-		"typescript": "^5.0.4",
+		"stylelint": "^16.2.1",
+		"typescript": "^5.3.3",
 		"yaml-lint": "^1.7.0"
 	},
 	"private": true,
