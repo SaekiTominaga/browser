@@ -1,7 +1,7 @@
 {
 	"name": "browser",
 	"scripts": {
-		"format": "prettier -w packages/bookmarklet/src/*.js packages/userscript/src/*.user.ts packages/userstyle/style/*.css",
+		"format": "prettier -w .",
 		"github-actions-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
