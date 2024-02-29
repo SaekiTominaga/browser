@@ -37,5 +37,5 @@ await Promise.all(
 		await fs.promises.writeFile(outFilePath, outData);
 
 		console.info(`${filePath} -> ${outFilePath}`);
-	})
+	}),
 );
