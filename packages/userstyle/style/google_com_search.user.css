@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Google 検索
 @namespace      https://w0s.jp/
-@version        2.0.1
+@version        2.0.2
 @author         SaekiTominaga
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.google.com/search?")
 {
 	/* 検索結果のリンクは常に下線表示する */
 	:is(#search, #botstuff) {
-		&:any-link {
+		& :any-link {
 			& > h3:not([aria-hidden]) {
 				text-decoration: underline;
 			}
