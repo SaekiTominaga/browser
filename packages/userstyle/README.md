@@ -6,7 +6,7 @@
 | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
 | [Facebook](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/facebook_com.user.css)                     | 右カラムを非表示にする                             |
 | [GitHub Gist](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/gist_github_com.user.css)               | 入力フォーム UI 改善                               |
-| [Google 検索](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/google_co_jp.user.css)                  | 検索結果のリンクは常に下線表示する                 |
+| [Google 検索](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/google_com_search.user.css)                  | 検索結果のリンクは常に下線表示する                 |
 | [HTML Living Standard](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/html_spec_whatwg_org.user.css) | リンクを見やすくする                               |
 | [Instagram](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/instagram_com.user.css)                   | 画像のコンテキストメニューが表示されない仕様を覆す |
 
