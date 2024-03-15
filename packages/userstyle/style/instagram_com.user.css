@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Instagram
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("www.instagram.com") {
+	/* 画像のコンテキストメニューが表示されない仕様を覆す */
+	._aagw {
+		display: none;
+	}
+}

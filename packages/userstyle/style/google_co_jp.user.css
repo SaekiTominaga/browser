@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           Google 検索
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("google.co.jp") {
+	/* 検索結果のリンクは常に下線表示する */
+	:is(#tads, #tadsb, #res, #rhs, #taw) a,
+	:is(#tads, #tadsb, #res, #rhs, #taw) a .LC20lb {
+		text-decoration: underline;
+	}
+}

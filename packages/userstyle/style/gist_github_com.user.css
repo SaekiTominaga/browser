@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           GitHub Gist
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("gist.github.com") {
+	/* 入力エリアが狭くなってしまうのを防ぐ */
+	.container-lg {
+		max-width: none;
+	}
+
+	.CodeMirror {
+		height: 40em !important;
+	}
+
+	/* 文字が小さすぎて老人にはキツい */
+	.cm-s-github-light .CodeMirror-lines {
+		font-size: 18px;
+	}
+}

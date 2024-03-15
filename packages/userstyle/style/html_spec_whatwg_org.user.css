@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           HTML Living Standard
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("html.spec.whatwg.org"),
+               domain("momdo.github.io") {
+	/* 文中の要素名や属性名のリンクは常に下線表示（橙色の下線なしではリンクだと判別しにくい） */
+	code :any-link {
+		text-decoration: underline;
+	}
+
+	/* 2022年3月に <code> の橙色が暗くなったのでもとの色に戻す */
+	code :any-link,
+	:is(:any-link, dfn) code {
+		color: orangered;
+	}
+}
