@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Facebook
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("facebook.com") {
+	/* 右カラムを非表示にする */
+	[role="complementary"] {
+		visibility: hidden;
+	}
+}

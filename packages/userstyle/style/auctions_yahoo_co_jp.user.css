@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Yahoo!オークション
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("auctions.yahoo.co.jp") {
+	/* 出品タイトルを検索しやすくする */
+	#AS1m3 div.inner div.bd div.a h3 {
+		height: auto;
+	}
+
+	#AS1m3 div.inner div.bd div.a h3 a {
+		-webkit-line-clamp: none;
+	}
+}

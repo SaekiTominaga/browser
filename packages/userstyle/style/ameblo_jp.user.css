@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           アメーバブログ
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("ameblo.jp") {
+	/* Cookie 無効環境で出続ける Cookie Wall を消す */
+	#acmp-opt-in {
+		display: none;
+	}
+}
