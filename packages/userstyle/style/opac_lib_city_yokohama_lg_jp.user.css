@@ -1,12 +1,38 @@
 /* ==UserStyle==
 @name           横浜市立図書館蔵書検索ページ
 @namespace      https://w0s.jp/
-@version        1.0.0
+@version        1.1.0
 @author         SaekiTominaga
 ==/UserStyle== */
 @-moz-document domain("opac.lib.city.yokohama.lg.jp") {
-	/* ヘッダー上部の UD ボタンエリアを消す https://aspud.daimojin.com/ud5asp/ud_dai5c/help/help.html */
-	body > script + script + center {
+	body > script {
+		/* ヘッダー上部の UD ボタンエリアを消す https://aspud.daimojin.com/ud5asp/ud_dai5c/help/help.html */
+		:is(&, & + script) {
+			& + center {
+				display: none;
+			}
+		}
+	}
+
+	/* 見出しの余白を狭める */
+	#hdg-site {
+		padding-block-start: 17px;
+	}
+
+	#nav-global {
+		/* 言語選択プルダウンを消す */
+		& + select {
+			display: none;
+		}
+
+		/* 不要なグローバルナビを消す */
+		& > ul > li:has(a:not([href^="/"])) {
+			display: none;
+		}
+	}
+
+	#nav-guide {
+		/* フリーワード検索エリアを消す */
 		display: none;
 	}
 }
