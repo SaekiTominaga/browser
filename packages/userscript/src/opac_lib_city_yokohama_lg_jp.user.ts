@@ -3,7 +3,7 @@
 // @namespace   https://w0s.jp/
 // @description 「横浜市立図書館蔵書検索ページ」のフォーム操作を改善
 // @author      SaekiTominaga
-// @version     1.0.0
+// @version     1.0.1
 // @match       https://opac.lib.city.yokohama.lg.jp/winj/opac/*
 // ==/UserScript==
 (() => {
@@ -25,7 +25,17 @@
 	const volumeListFormElement = document.getElementsByName('VolumeListForm')[0];
 	if (volumeListFormElement !== undefined) {
 		/* Enter キー押下で意図しない送信ボタンが submit されてしまうのを防止 */
-		volumeListFormElement.querySelector('div[style="display:none;"]')?.remove();
+		const hiddenSubmitsWrapElement = volumeListFormElement.querySelector('div[style="display:none;"]');
+		if (hiddenSubmitsWrapElement !== null) {
+			const FROM_ID = 'VolumeListForm';
+
+			volumeListFormElement.id = FROM_ID;
+
+			hiddenSubmitsWrapElement.querySelectorAll('input').forEach((inputElement): void => {
+				inputElement.setAttribute('form', FROM_ID);
+			});
+			document.body.insertAdjacentElement('beforeend', hiddenSubmitsWrapElement);
+		}
 
 		/* 正確な日付を指定する必要性は薄いため、年のみの指定で送信できるようにする */
 		for (const originInputElement of volumeListFormElement.querySelectorAll<HTMLInputElement>('input[name="txt_stisdate"], input[name="txt_edisdate"]')) {
