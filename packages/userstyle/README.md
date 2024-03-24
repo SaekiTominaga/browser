@@ -16,4 +16,5 @@
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | [アメーバブログ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/ameblo_jp.user.css)                                  | Cookie 無効環境で出続ける Cookie Wall を消す |
 | [Yahoo!オークション](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/auctions_yahoo_co_jp.user.css)                   | 出品タイトルを検索しやすくする               |
+| [Zenn](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/zenn_dev.user.css)                                             | スクリプト無効環境で埋め込みリンクを表示する |
 | [横浜市立図書館蔵書検索ページ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/opac_lib_city_yokohama_lg_jp.user.css) | ヘッダー上部の UD ボタンエリアを消す         |

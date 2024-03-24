@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Zenn
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("zenn.dev") {
+	/* スクリプト無効環境で埋め込みリンクを表示する */
+	.znc span.embed-block {
+		display: none;
+		margin-block-end: 0;
+
+		& + a {
+			display: inline flow !important;
+		}
+	}
+}
