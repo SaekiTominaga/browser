@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           Qiita
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("qiita.com") {
+	/* 非ログイン状態でログインを促すメッセージを非表示にする */
+	.style-1y0vgst,
+    .style-qidqy3 {
+		display: none;
+	}
+}
