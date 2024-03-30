@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           国立公文書館デジタルアーカイブ
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("www.digital.archives.go.jp") {
+	/* ソーシャルアイコンが表示されない環境でのレイアウト崩れ解消 */
+	.detail_foot ul li {
+		&:has(div:empty) {
+			display: none;
+		}
+	}
+}

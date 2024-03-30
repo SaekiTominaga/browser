@@ -12,10 +12,11 @@
 
 ## 日本国内向けサイト
 
-| 名称                                                                                                                                             | 内容                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
-| [アメーバブログ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/ameblo_jp.user.css)                                  | Cookie 無効環境で出続ける Cookie Wall を消す           |
-| [Yahoo!オークション](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/auctions_yahoo_co_jp.user.css)                   | 出品タイトルを検索しやすくする                         |
-| [Qiita](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/qiita_dev.user.css)                                           | 非ログイン状態でログインを促すメッセージを非表示にする |
-| [Zenn](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/zenn_dev.user.css)                                             | スクリプト無効環境で埋め込みリンクを表示する           |
-| [横浜市立図書館蔵書検索ページ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/opac_lib_city_yokohama_lg_jp.user.css) | ヘッダー上部の UD ボタンエリアを消す                   |
+| 名称                                                                                                                                             | 内容                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| [アメーバブログ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/ameblo_jp.user.css)                                  | Cookie 無効環境で出続ける Cookie Wall を消す               |
+| [Yahoo!オークション](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/auctions_yahoo_co_jp.user.css)                   | 出品タイトルを検索しやすくする                             |
+| [Qiita](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/qiita_com.user.css)                                           | 非ログイン状態でログインを促すメッセージを非表示にする     |
+| [Zenn](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/zenn_dev.user.css)                                             | スクリプト無効環境で埋め込みリンクを表示する               |
+| [国立公文書館デジタルアーカイブ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/www_digital_archives_go_jp.user.css) | ソーシャルアイコンが表示されない環境でのレイアウト崩れ解消 |
+| [横浜市立図書館蔵書検索ページ](https://github.com/SaekiTominaga/browser/raw/main/packages/userstyle/style/opac_lib_city_yokohama_lg_jp.user.css) | ヘッダー上部の UD ボタンエリアを消す                       |
