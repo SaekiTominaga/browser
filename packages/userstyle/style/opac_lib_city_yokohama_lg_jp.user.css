@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           横浜市立図書館蔵書検索ページ
 @namespace      https://w0s.jp/
-@version        1.1.0
+@version        1.2.0
 @author         SaekiTominaga
 ==/UserStyle== */
 @-moz-document domain("opac.lib.city.yokohama.lg.jp") {
@@ -10,6 +10,18 @@
 		:is(&, & + script) {
 			& + center {
 				display: none;
+			}
+		}
+	}
+
+	/* ログインリンクの枠線内の空き部分をクリッカブルにする */
+	#box-utility {
+		padding: 0;
+
+		& .list-linear {
+			& a {
+				display: block flow;
+				padding: 10px;
 			}
 		}
 	}
