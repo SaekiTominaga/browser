@@ -10,7 +10,7 @@
 	#botWarn {
 		inset-block-start: initial;
 
-		& span {
+		& > span {
 			animation: none;
 		}
 	}
