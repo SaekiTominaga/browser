@@ -4,7 +4,7 @@
 // @grant       GM_getValue
 // @description 「駅すぱあと for web」のキーボード操作を改善する
 // @author      SaekiTominaga
-// @version     1.0.3
+// @version     1.0.4
 // @match       https://roote.ekispert.net/*
 // ==/UserScript==
 
@@ -135,16 +135,16 @@ interface CourseSetting {
 
 		datepickerElement.type = 'date';
 		datepickerElement.required = true;
-		datepickerElement.min = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getDate()}`;
-		datepickerElement.max = `${maxDate.getFullYear()}-${String(maxDate.getMonth() + 1).padStart(2, '0')}-${maxDate.getDate()}`;
+		datepickerElement.min = `${String(today.getFullYear())}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate())}`;
+		datepickerElement.max = `${String(maxDate.getFullYear())}-${String(maxDate.getMonth() + 1).padStart(2, '0')}-${String(maxDate.getDate())}`;
 		datepickerElement.addEventListener('change', () => {
 			let { value } = datepickerElement;
 			if (value === '') {
-				value = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getDate()}`; // クリアボタンが押された場合は現在日付にする
+				value = `${String(today.getFullYear())}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate())}`; // クリアボタンが押された場合は現在日付にする
 				datepickerElement.value = value;
 			}
 			const valueSplit = value.split('-');
-			const yyyymm = `${valueSplit.at(0)}${valueSplit.at(1)}`;
+			const yyyymm = `${String(valueSplit.at(0))}${String(valueSplit.at(1))}`;
 			const dd = String(Number(valueSplit.at(2))); // 先頭 0 除去
 
 			yyyymmElement.value = yyyymm;
