@@ -5,7 +5,7 @@
 @author         SaekiTominaga
 ==/UserStyle== */
 
-@-moz-document domain("misskey.io") {
+@-moz-document domain("misskey.noellabo.jp") {
 	/* Bot アカウント警告表示を画面下部に移動して点滅を止める */
 	#botWarn {
 		inset-block-start: initial;
