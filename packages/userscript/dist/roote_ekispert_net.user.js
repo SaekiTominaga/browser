@@ -4,7 +4,7 @@
 // @grant       GM_getValue
 // @description 「駅すぱあと for web」のキーボード操作を改善する
 // @author      SaekiTominaga
-// @version     1.1.0
+// @version     1.1.1
 // @match       https://roote.ekispert.net/*
 // ==/UserScript==
 (() => {
@@ -39,10 +39,7 @@
 			}
 
 			/* 経路検索の入力欄 */
-			#dep,
-			#arr,
-			#via1,
-			#via2 {
+			:is(#dep, #arr, #via1, #via2) {
 				position: relative;
 				top: 0.2em;
 				padding: 0.25em 0;
@@ -50,26 +47,22 @@
 			}
 
 			/* 「現在地」ボタンは不要なので消す */
-			#dep_current_location_button，
-			#arr_current_location_button {
+			:is(#dep_current_location_button, #arr_current_location_button) {
 				display: none;
 			}
 
 			/* 「経由」欄を最初から表示 */
-			#via1_area,
-			#via2_area {
+			:is(#via1_area, #via2_area) {
 				display: block flow list-item !important;
 			}
 
 			/* 「経由」表示ボタンは不要なので消す */
 			#via {
-				display: none;
+				display: none !important;
 			}
 
 			/* 日時のプルダウンやカレンダーボタンはユーザースクリプトで別途 <input type="date"> を表示するため不要 */
-			#yyyymm,
-			#day,
-			.ui-datepicker-trigger {
+			:is(#yyyymm, #day, .ui-datepicker-trigger) {
 				display: none;
 			}
 
@@ -79,9 +72,7 @@
 				font-size: 150%;
 			}
 
-			#hour,
-			#minute10,
-			#minute1 {
+			:is(#hour, #minute10, #minute1) {
 				font-size: 150%;
 			}
 
@@ -91,12 +82,12 @@
 			}
 
 			/* 「詳細設定」開閉ボタンは不要なので消す */
-			#btn_option {
+			:is(#btn_option, #result_btn_option) {
 				display: none;
 			}
 
 			/* 「リアルタイム経路検索」は不要なので消す */
-			#btn_option + .toggle_button {
+			:is(#btn_option, #result_btn_option) + .toggle_button {
 				display: none;
 			}
 
