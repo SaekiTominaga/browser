@@ -130,7 +130,7 @@ interface CourseSetting {
 	const supportGMgetValue = window.GM_getValue !== undefined; // GM_getValue() をサポートしているか
 
 	/* 【検索画面】余計な tabindex 属性を除去する */
-	for (const tabindexRemoveElement of document.querySelectorAll('input[tabindex]')) {
+	for (const tabindexRemoveElement of document.querySelectorAll('#search_area input[tabindex]')) {
 		tabindexRemoveElement.removeAttribute('tabindex');
 	}
 
