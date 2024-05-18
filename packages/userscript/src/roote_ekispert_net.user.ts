@@ -4,7 +4,7 @@
 // @grant       GM_getValue
 // @description 「駅すぱあと for web」のキーボード操作を改善する
 // @author      SaekiTominaga
-// @version     1.0.4
+// @version     1.1.0
 // @match       https://roote.ekispert.net/*
 // ==/UserScript==
 
@@ -38,87 +38,99 @@ interface CourseSetting {
 
 	/* CSS */
 	const CSS = `
-		:not([tabindex="-1"]):focus {
-			outline: 2px solid #4d90fe;
-		}
+		#search_area {
+			:not([tabindex="-1"]):focus {
+				outline: 2px solid #4d90fe;
+			}
 
-		/* 「検索」ボタン */
-		#submit_btn {
-			outline-offset: 0.1em;
-		}
+			/* 「検索」ボタン */
+			#submit_btn {
+				outline-offset: 0.1em;
+			}
 
-		#submit_btn::-moz-focus-inner {
-			padding: 0;
-			border: none;
-		}
+			#submit_btn::-moz-focus-inner {
+				border: none;
+				padding: 0;
+			}
 
-		/* 経路検索の入力欄 */
-		#search_area #dep,
-		#search_area #arr,
-		#search_area #via1,
-		#search_area #via2 {
-			padding: 0.25em 0;
-			position: relative;
-			top: 0.2em;
-			font-size: 150%;
-		}
+			/* 経路検索の入力欄 */
+			#dep,
+			#arr,
+			#via1,
+			#via2 {
+				position: relative;
+				top: 0.2em;
+				padding: 0.25em 0;
+				font-size: 150%;
+			}
 
-		/* 「経由」欄を最初から表示 */
-		#search_area #via1_area,
-		#search_area #via2_area {
-			display: list-item;
-		}
+			/* 「現在地」ボタンは不要なので消す */
+			#dep_current_location_button，
+			#arr_current_location_button {
+				display: none;
+			}
 
-		/* 「経由」表示ボタンは不要なので消す */
-		#search_area #via {
-			display: none;
-		}
+			/* 「経由」欄を最初から表示 */
+			#via1_area,
+			#via2_area {
+				display: block flow list-item !important;
+			}
 
-		/* 日時のプルダウンやカレンダーボタンはユーザースクリプトで別途 <input type="date"> を表示するため不要 */
-		#yyyymm,
-		#day,
-		.ui-datepicker-trigger {
-			display: none;
-		}
+			/* 「経由」表示ボタンは不要なので消す */
+			#via {
+				display: none;
+			}
 
-		#datepicker {
-			margin-inline-end: 0.5em;
-			padding: 0.25em 0;
-			font-size: 150%;
-		}
+			/* 日時のプルダウンやカレンダーボタンはユーザースクリプトで別途 <input type="date"> を表示するため不要 */
+			#yyyymm,
+			#day,
+			.ui-datepicker-trigger {
+				display: none;
+			}
 
-		#search_area #hour,
-		#search_area #minute10,
-		#search_area #minute1 {
-			font-size: 150%;
-		}
+			#datepicker {
+				margin-inline-end: 0.5em;
+				padding: 0.25em 0;
+				font-size: 150%;
+			}
 
-		/* 「詳細設定」欄を最初から表示 */
-		#option_area {
-			display: list-item;
-		}
+			#hour,
+			#minute10,
+			#minute1 {
+				font-size: 150%;
+			}
 
-		/* 「詳細設定」開閉ボタンは不要なので消す */
-		#search_area #btn_option,
-		#search_area #result_btn_option {
-			display: none;
-		}
+			/* 「詳細設定」欄を最初から表示 */
+			#option_area {
+				display: block flow list-item;
+			}
 
-		/* 「詳細設定」開閉ボタンを消した代わりに余白を付ける */
-		#search_area #option_area {
-			margin-block-start: 1em;
-		}
+			/* 「詳細設定」開閉ボタンは不要なので消す */
+			#btn_option {
+				display: none;
+			}
 
-		/* 「詳細設定」開閉ボタン関連のスタイルを消す */
-		#search_area #option {
-			background-image: none;
+			/* 「リアルタイム経路検索」は不要なので消す */
+			#btn_option + .toggle_button {
+				display: none;
+			}
+
+			/* 「詳細設定」開閉ボタンを消した代わりに余白を付ける */
+			#option_area {
+				margin-block-start: 1em;
+			}
+
+			/* 「詳細設定」開閉ボタン関連のスタイルを消す */
+			#option {
+				background-image: none;
+			}
 		}
 	`;
 
 	const supportGMgetValue = window.GM_getValue !== undefined; // GM_getValue() をサポートしているか
 
 	/* 【検索画面】余計な tabindex 属性を除去する */
-	for (const tabindexRemoveElement of document.querySelectorAll('#search_area input[tabindex]')) {
+	for (const tabindexRemoveElement of document.querySelectorAll('input[tabindex]')) {
 		tabindexRemoveElement.removeAttribute('tabindex');
 	}
 
