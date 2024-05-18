@@ -4,7 +4,7 @@
 // @grant       GM_getValue
 // @description 「駅すぱあと for web」のキーボード操作を改善する
 // @author      SaekiTominaga
-// @version     1.1.0
+// @version     1.1.1
 // @match       https://roote.ekispert.net/*
 // ==/UserScript==
 (() => {
