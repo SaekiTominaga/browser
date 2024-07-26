@@ -6,7 +6,6 @@
 		"lint": "eslint src/*.js build.js"
 	},
 	"dependencies": {
-		"globby": "^13.2.0",
 		"terser": "^5.18.2"
 	},
 	"private": true
