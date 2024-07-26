@@ -9,17 +9,23 @@ export default tseslint.config(
 	...w0sConfig,
 	{
 		ignores: ['dist/*.js'],
+	},
+	{
+		files: ['src/*.js'],
 		languageOptions: {
 			globals: globals.browser,
 			parserOptions: {
 				sourceType: 'script',
 			},
 		},
-	},
-	{
-		files: ['src/*.js'],
 		rules: {
 			'no-alert': 'off',
+		},
+	},
+	{
+		files: ['build.js'],
+		rules: {
+			'no-console': 'off',
 		},
 	},
 );
