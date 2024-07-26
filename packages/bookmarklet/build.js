@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
-import { globby } from 'globby';
 import { minify } from 'terser';
 
 const argsParsedValues = parseArgs({
@@ -21,21 +20,20 @@ const argsParsedValues = parseArgs({
 const inputDirectory = String(argsParsedValues.input);
 const outDirectory = String(argsParsedValues.out);
 
-const files = await globby(`${inputDirectory}/*.js`);
-await Promise.all(
-	files.map(async (filePath) => {
-		/* File read */
-		const data = await fs.promises.readFile(filePath);
+const files = fs.promises.glob(`${inputDirectory}/*.js`);
 
-		/* Minify */
-		const minified = await minify(data.toString());
+for await (const file of files) {
+	/* File read */
+	const data = await fs.promises.readFile(file);
 
-		/* File write */
-		const outFilePath = `${outDirectory}/${path.basename(filePath, '.js')}.txt`;
-		const outData = `javascript:${minified.code}`;
+	/* Minify */
+	const minified = await minify(data.toString());
 
-		await fs.promises.writeFile(outFilePath, outData);
+	/* File write */
+	const outPath = `${outDirectory}/${path.basename(file, '.js')}.txt`;
+	const outData = `javascript:${minified.code}`;
 
-		console.info(`${filePath} -> ${outFilePath}`);
-	}),
-);
+	await fs.promises.writeFile(outPath, outData);
+
+	console.info(`${file} -> ${outPath}`);
+}

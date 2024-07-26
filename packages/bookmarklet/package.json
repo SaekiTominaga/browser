@@ -3,10 +3,9 @@
 	"type": "module",
 	"scripts": {
 		"build": "node build.js -i src -o dist",
-		"lint": "eslint src/*.js"
+		"lint": "eslint src/*.js build.js"
 	},
 	"dependencies": {
-		"globby": "^13.2.0",
 		"terser": "^5.18.2"
 	},
 	"private": true
