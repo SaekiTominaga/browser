@@ -5,13 +5,13 @@ on:
       - main
     paths:
       - 'packages/userstyle/style/*.css'
-      - 'packages/userstyle/.stylelintrc.json'
+      - 'packages/userstyle/stylelint.config.js'
   push:
     branches:
       - main
     paths:
       - 'packages/userstyle/style/*.css'
-      - 'packages/userstyle/.stylelintrc.json'
+      - 'packages/userstyle/stylelint.config.js'
   workflow_dispatch:
 
 jobs:

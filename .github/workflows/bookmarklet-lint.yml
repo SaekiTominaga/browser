@@ -6,14 +6,14 @@ on:
     paths:
       - 'packages/bookmarklet/src/*.js'
       - 'packages/bookmarklet/build.js'
-      - 'packages/bookmarklet/.eslintrc.json'
+      - 'packages/bookmarklet/eslint.config.js'
   push:
     branches:
       - main
     paths:
       - 'packages/bookmarklet/src/*.js'
       - 'packages/bookmarklet/build.js'
-      - 'packages/bookmarklet/.eslintrc.json'
+      - 'packages/bookmarklet/eslint.config.js'
   workflow_dispatch:
 
 jobs:
