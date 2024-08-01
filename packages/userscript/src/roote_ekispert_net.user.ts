@@ -4,7 +4,7 @@
 // @grant       GM_getValue
 // @description 「駅すぱあと for web」のキーボード操作を改善する
 // @author      SaekiTominaga
-// @version     1.1.1
+// @version     1.1.2
 // @match       https://roote.ekispert.net/*
 // ==/UserScript==
 
@@ -160,7 +160,8 @@ interface CourseSetting {
 	if (optionAreaElement !== null) {
 		console.debug('【検索画面】交通手段の初期設定');
 
-		const courseSetting: CourseSetting = supportGMgetValue ? window.GM_getValue('COURSE_SETTING', COURSE_SETTING) : COURSE_SETTING;
+		// eslint-disable-next-line new-cap, @typescript-eslint/no-unsafe-call
+		const courseSetting = supportGMgetValue ? (window.GM_getValue('COURSE_SETTING', COURSE_SETTING) as CourseSetting) : COURSE_SETTING;
 		for (const [courseName, checked] of Object.entries(courseSetting)) {
 			const courseCheckboxElement = document.getElementById(courseName) as HTMLInputElement | null;
 			if (courseCheckboxElement === null) {
