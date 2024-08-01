@@ -137,6 +137,7 @@
     const optionAreaElement = document.getElementById('option_area');
     if (optionAreaElement !== null) {
         console.debug('【検索画面】交通手段の初期設定');
+        // eslint-disable-next-line new-cap, @typescript-eslint/no-unsafe-call
         const courseSetting = supportGMgetValue ? window.GM_getValue('COURSE_SETTING', COURSE_SETTING) : COURSE_SETTING;
         for (const [courseName, checked] of Object.entries(courseSetting)) {
             const courseCheckboxElement = document.getElementById(courseName);
