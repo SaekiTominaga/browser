@@ -16,6 +16,7 @@ export default [
 			},
 		},
 		rules: {
+			'line-comment-position': 'off',
 			'no-console': 'off',
 			strict: ['error', 'function'],
 		},
