@@ -1,12 +1,7 @@
-name: userstyle-lint
+name: Linting userstyle
+
 on:
   pull_request:
-    branches:
-      - main
-    paths:
-      - 'workspaces/userstyle/style/*.css'
-      - 'workspaces/userstyle/stylelint.config.js'
-  push:
     branches:
       - main
     paths:

@@ -1,12 +1,7 @@
-name: userscript-lint
+name: Linting userscript
+
 on:
   pull_request:
-    branches:
-      - main
-    paths:
-      - 'workspaces/userscript/src/*.user.ts'
-      - 'workspaces/userscript/eslint.config.js'
-  push:
     branches:
       - main
     paths:

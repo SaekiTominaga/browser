@@ -1,13 +1,7 @@
-name: bookmarklet-lint
+name: Linting bookmarklet
+
 on:
   pull_request:
-    branches:
-      - main
-    paths:
-      - 'workspaces/bookmarklet/src/*.js'
-      - 'workspaces/bookmarklet/build.js'
-      - 'workspaces/bookmarklet/eslint.config.js'
-  push:
     branches:
       - main
     paths:
