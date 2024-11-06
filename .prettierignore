@@ -1,3 +1,3 @@
-/packages/*/dist/
+/workspaces/*/dist/
 
 package-lock.json
