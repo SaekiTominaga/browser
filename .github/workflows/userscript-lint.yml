@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - 'packages/userscript/src/*.user.ts'
-      - 'packages/userscript/eslint.config.js'
+      - 'workspaces/userscript/src/*.user.ts'
+      - 'workspaces/userscript/eslint.config.js'
   push:
     branches:
       - main
     paths:
-      - 'packages/userscript/src/*.user.ts'
-      - 'packages/userscript/eslint.config.js'
+      - 'workspaces/userscript/src/*.user.ts'
+      - 'workspaces/userscript/eslint.config.js'
   workflow_dispatch:
 
 jobs:

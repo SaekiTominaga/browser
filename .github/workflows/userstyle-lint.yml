@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - 'packages/userstyle/style/*.css'
-      - 'packages/userstyle/stylelint.config.js'
+      - 'workspaces/userstyle/style/*.css'
+      - 'workspaces/userstyle/stylelint.config.js'
   push:
     branches:
       - main
     paths:
-      - 'packages/userstyle/style/*.css'
-      - 'packages/userstyle/stylelint.config.js'
+      - 'workspaces/userstyle/style/*.css'
+      - 'workspaces/userstyle/stylelint.config.js'
   workflow_dispatch:
 
 jobs:
