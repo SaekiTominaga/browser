@@ -1,5 +1,5 @@
 {
-	"name": "@browser/userscript",
+	"name": "@w0s/userscript",
 	"type": "module",
 	"scripts": {
 		"build": "tsc",

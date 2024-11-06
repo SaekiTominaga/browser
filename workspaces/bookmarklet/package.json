@@ -1,5 +1,5 @@
 {
-	"name": "@browser/bookmarklet",
+	"name": "@w0s/bookmarklet",
 	"type": "module",
 	"scripts": {
 		"build": "node build.js -i src -o dist",

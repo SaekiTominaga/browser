@@ -1,5 +1,5 @@
 {
-	"name": "@browser/userstyle",
+	"name": "@w0s/userstyle",
 	"type": "module",
 	"scripts": {
 		"lint": "stylelint style/*.css"

@@ -1,5 +1,4 @@
 /node_modules/
 
-/packages/bookmarklet/node_modules/
-
-/packages/userscript/dist/tsconfig.tsbuildinfo
+/workspaces/bookmarklet/node_modules/
+/workspaces/userscript/dist/tsconfig.tsbuildinfo
