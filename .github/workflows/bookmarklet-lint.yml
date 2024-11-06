@@ -25,4 +25,4 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      - run: npm run lint -w '@browser/bookmarklet'
+      - run: npm run lint -w '@w0s/bookmarklet'
