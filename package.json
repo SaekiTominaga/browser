@@ -2,7 +2,7 @@
 	"name": "browser",
 	"scripts": {
 		"format": "prettier -w .",
-		"github-actions-lint": "yamllint .github/workflows/*.yml"
+		"yaml-lint": "yamllint .github/workflows/*.yml"
 	},
 	"devDependencies": {
 		"@w0s/eslint-config": "^7.0.0",
