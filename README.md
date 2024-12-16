@@ -1,5 +1,5 @@
 # ブラウザ実行機能
 
-- [ブックマークレット](packages/bookmarklet)
-- [ユーザースクリプト](packages/userscript)
-- [ユーザースタイルシート](packages/userstyle)
+- [ブックマークレット](workspaces/bookmarklet)
+- [ユーザースクリプト](workspaces/userscript)
+- [ユーザースタイルシート](workspaces/userstyle)
