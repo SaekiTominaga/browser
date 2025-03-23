@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           横浜市立図書館蔵書検索ページ
 @namespace      https://w0s.jp/
-@version        1.3.0
+@version        1.4.0
 @author         SaekiTominaga
 ==/UserStyle== */
 @-moz-document domain("opac.lib.city.yokohama.lg.jp") {
@@ -9,8 +9,10 @@
 		/* ヘッダー上部の UD ボタンエリアを消す https://aspud.daimojin.com/ud5asp/ud_dai5c/help/help.html */
 		:is(&, & + script) {
 			& + style {
-				& + .accordion {
-					display: none;
+				:is(&, & + input[type="hidden"]) {
+					& + .accordion {
+						display: none;
+					}
 				}
 			}
 		}
