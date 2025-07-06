@@ -3,8 +3,8 @@
 // @namespace   https://w0s.jp/
 // @description 出品フォームをキーボードのみで操作できるようにする
 // @author      SaekiTominaga
-// @version     1.1.0
-// @match       https://auctions.yahoo.co.jp/sell/*
+// @version     1.1.1
+// @match       https://auctions.yahoo.co.jp/jp/show/*
 // ==/UserScript==
 (() => {
 	'use strict';
