@@ -1,16 +1,15 @@
-name: Linting userstyle
+name: YAML files
 
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'workspaces/userstyle/style/*.css'
-      - 'workspaces/userstyle/stylelint.config.js'
+      - '.github/workflows/*.yml'
   workflow_dispatch:
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,4 +17,4 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      - run: npm run lint -w '@w0s/userstyle'
+      - run: npm run yaml-lint
