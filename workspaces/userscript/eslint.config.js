@@ -9,6 +9,14 @@ export default [
 		ignores: ['dist/*.js'],
 	},
 	{
+		files: ['**/*.ts'],
+		languageOptions: {
+			parserOptions: {
+				tsconfigRootDir: import.meta.dirname,
+			},
+		},
+	},
+	{
 		files: ['src/*.user.ts'],
 		languageOptions: {
 			parserOptions: {

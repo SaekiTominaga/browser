@@ -4,14 +4,14 @@
 		"format": "prettier -w ."
 	},
 	"devDependencies": {
-		"@w0s/eslint-config": "^7.0.0",
-		"@w0s/stylelint-config": "^4.7.0",
-		"@w0s/tsconfig": "^1.4.1",
-		"eslint": "^8.57.0",
-		"globals": "^15.13.0",
-		"prettier": "^3.2.5",
-		"stylelint": "^16.7.0",
-		"typescript": "^5.3.3"
+		"@w0s/eslint-config": "^8.6.0",
+		"@w0s/stylelint-config": "^4.11.0",
+		"@w0s/tsconfig": "^1.6.1",
+		"eslint": "^9.34.0",
+		"globals": "^16.3.0",
+		"prettier": "^3.6.2",
+		"stylelint": "^16.23.1",
+		"typescript": "^5.9.2"
 	},
 	"private": true,
 	"workspaces": [
