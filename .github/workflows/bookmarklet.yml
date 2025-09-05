@@ -2,8 +2,6 @@ name: bookmarklet
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - 'workspaces/bookmarklet/src/*.js'
       - 'workspaces/bookmarklet/build.js'

@@ -2,8 +2,6 @@ name: userstyle
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - 'workspaces/userstyle/style/*.css'
       - 'workspaces/userstyle/stylelint.config.js'
