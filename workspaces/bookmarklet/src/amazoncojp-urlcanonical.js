@@ -9,7 +9,7 @@
 		return;
 	}
 
-	if (/^\/dp\/([0-9A-Z]{10})$/.test(location.pathname)) {
+	if (/^\/dp\/([0-9A-Z]{10})$/v.test(location.pathname)) {
 		/* すでに正規化済み */
 		return;
 	}
@@ -19,5 +19,5 @@
 		alert('<link rel="canonical"> がありません。');
 		return;
 	}
-	location.assign(/^https:\/\/www.amazon.co.jp\/dp\/([0-9A-Z]{10})$/.test(canonicalUrl) ? canonicalUrl : canonicalUrl.replace(/\/([^/]*)\/dp\//, '/dp/'));
+	location.assign(/^https:\/\/www.amazon.co.jp\/dp\/([0-9A-Z]{10})$/v.test(canonicalUrl) ? canonicalUrl : canonicalUrl.replace(/\/([^\/]*)\/dp\//v, '/dp/'));
 })();
