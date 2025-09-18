@@ -2,6 +2,10 @@
 	"extends": "@w0s/tsconfig",
 	"include": ["src/*.user.ts", "@types/*.d.ts"],
 	"compilerOptions": {
+		/* Modules */
+		"module": "es2022",
+		"moduleResolution": "node",
+
 		/* Emit */
 		"outDir": "dist"
 	}
