@@ -6,7 +6,7 @@
 		"lint": "eslint src/*.js build.js"
 	},
 	"dependencies": {
-		"terser": "^5.18.2"
+		"terser": "^5.44.0"
 	},
 	"private": true
 }
