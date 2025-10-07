@@ -6,6 +6,8 @@ on:
       - 'workspaces/bookmarklet/src/*.js'
       - 'workspaces/bookmarklet/build.js'
       - 'workspaces/bookmarklet/eslint.config.js'
+      - 'workspaces/bookmarklet/package.json'
+      - 'package.json'
   workflow_dispatch:
 
 permissions: {}

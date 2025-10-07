@@ -5,6 +5,8 @@ on:
     paths:
       - 'workspaces/userscript/src/*.user.ts'
       - 'workspaces/userscript/eslint.config.js'
+      - 'workspaces/userscript/package.json'
+      - 'package.json'
   workflow_dispatch:
 
 permissions: {}
