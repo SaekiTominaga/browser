@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           ハイウェイバスドットコム
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("highwaybus.com") {
+	:is(a, button, input, select, textarea):focus {
+		outline: 2px solid #4d90fe;
+	}
+
+	.ticketType ul li section input[type="radio" i] {
+		appearance: revert;
+		display: revert !important;
+	}
+}
