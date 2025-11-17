@@ -16,6 +16,7 @@
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | [国立公文書館デジタルアーカイブ](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/www_digital_archives_go_jp.user.css) | ソーシャルアイコンが表示されない環境でのレイアウト崩れ解消 |
 | [横浜市立図書館蔵書検索ページ](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/opac_lib_city_yokohama_lg_jp.user.css) | ヘッダー上部の UD ボタンエリアを消す                       |
+| [ハイウェイバスドットコム](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/highwaybus_com.user.css)                   | フォーカス可能要素のフォーカスリングを表示する             |
 | [アメーバブログ](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/ameblo_jp.user.css)                                  | Cookie 無効環境で出続ける Cookie Wall を消す               |
 | [のえすきー](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/misskey_noellabo_jp.user.css)                            | Bot アカウント警告表示を画面下部に移動して点滅を止める     |
 | [Yahoo!オークション](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/auctions_yahoo_co_jp.user.css)                   | 出品タイトルを検索しやすくする                             |
