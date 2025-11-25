@@ -2,8 +2,8 @@
 	"name": "@w0s/bookmarklet",
 	"type": "module",
 	"scripts": {
-		"build": "node build.js -i src -o dist",
-		"lint": "eslint src/*.js build.js"
+		"build": "node build.ts -i src -o dist",
+		"lint": "eslint src/*.js build.ts"
 	},
 	"dependencies": {
 		"terser": "^5.44.1"
