@@ -3,12 +3,12 @@
 // @namespace   https://w0s.jp/
 // @description 出品フォームをキーボードのみで操作できるようにする
 // @author      SaekiTominaga
-// @version     1.1.1
+// @version     1.1.2
 // @match       https://auctions.yahoo.co.jp/jp/show/*
 // ==/UserScript==
 (() => {
     'use strict';
-    for (const expandElement of document.querySelectorAll('.js-expand')) {
+    document.querySelectorAll('.js-expand').forEach((expandElement) => {
         const bodyElement = expandElement.querySelector('.js-expand-body');
         const triggerElement = expandElement.querySelector('.js-expand-trigger');
         if (bodyElement !== null && triggerElement !== null) {
@@ -24,8 +24,8 @@
                 }
             });
         }
-    }
-    for (const toggleExpandElement of document.querySelectorAll('.js-toggleExpand')) {
+    });
+    document.querySelectorAll('.js-toggleExpand').forEach((toggleExpandElement) => {
         const bodyElement = toggleExpandElement.querySelector('.js-toggleExpand-body');
         const triggerElement = toggleExpandElement.querySelector('.js-toggleExpand-trigger');
         if (bodyElement !== null && triggerElement !== null) {
@@ -41,5 +41,5 @@
                 }
             });
         }
-    }
+    });
 })();

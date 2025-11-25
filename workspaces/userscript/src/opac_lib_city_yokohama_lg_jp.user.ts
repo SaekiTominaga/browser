@@ -3,7 +3,7 @@
 // @namespace   https://w0s.jp/
 // @description 「横浜市立図書館蔵書検索ページ」のフォーム操作を改善
 // @author      SaekiTominaga
-// @version     1.0.1
+// @version     1.0.2
 // @match       https://opac.lib.city.yokohama.lg.jp/winj/opac/*
 // ==/UserScript==
 (() => {
@@ -11,15 +11,17 @@
 
 	/* `autocomplete` は常に有効（制作者スクリプト処理が終わった後に実行する必要がある） */
 	window.addEventListener('load', () => {
-		for (const inputElement of Array.from(document.querySelectorAll<HTMLInputElement>('input')).filter((element) => element.autocomplete === 'off')) {
-			inputElement.autocomplete = '';
-		}
+		Array.from(document.querySelectorAll('input'))
+			.filter((element) => element.autocomplete === 'off')
+			.forEach((inputElement) => {
+				inputElement.autocomplete = '';
+			});
 	});
 
 	/* 表示件数は常に最大を選択 */
-	for (const selectElement of document.querySelectorAll<HTMLSelectElement>('select[name="opt_pagesize"]')) {
+	document.querySelectorAll<HTMLSelectElement>('select[name="opt_pagesize"]').forEach((selectElement) => {
 		selectElement.selectedIndex = selectElement.options.length - 1;
-	}
+	});
 
 	/* 雑誌一覧の発行日による絞り込み */
 	const volumeListFormElement = document.getElementsByName('VolumeListForm')[0];
@@ -38,7 +40,7 @@
 		}
 
 		/* 正確な日付を指定する必要性は薄いため、年のみの指定で送信できるようにする */
-		for (const originInputElement of volumeListFormElement.querySelectorAll<HTMLInputElement>('input[name="txt_stisdate"], input[name="txt_edisdate"]')) {
+		volumeListFormElement.querySelectorAll<HTMLInputElement>('input[name="txt_stisdate"], input[name="txt_edisdate"]').forEach((originInputElement) => {
 			originInputElement.hidden = true;
 
 			const customInputElement = document.createElement('input');
@@ -65,11 +67,11 @@
 			});
 
 			originInputElement.parentElement?.insertBefore(customInputElement, originInputElement.nextSibling);
-		}
+		});
 
 		/* 存在意義の分からない要素を非表示にする */
-		for (const element of volumeListFormElement.querySelectorAll<HTMLElement>('li:has(> select[name="cmb_colum"])')) {
+		volumeListFormElement.querySelectorAll<HTMLElement>('li:has(> select[name="cmb_colum"])').forEach((element) => {
 			element.hidden = true;
-		}
+		});
 	}
 })();
