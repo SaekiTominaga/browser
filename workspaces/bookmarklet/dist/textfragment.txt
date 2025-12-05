@@ -1,1 +1,0 @@
-javascript:"use strict";(()=>{const t=getSelection()?.toString();if(void 0===t||""===t)return void alert("文字列が選択されていません。");const o=new URL(location.toString());o.hash=`#:~:text=${encodeURIComponent(t)}`,location.assign(o.toString())})();
