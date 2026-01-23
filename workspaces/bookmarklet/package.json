@@ -1,5 +1,6 @@
 {
 	"name": "@w0s/bookmarklet",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"build": "node build.ts -i src -o dist",
@@ -7,6 +8,5 @@
 	},
 	"dependencies": {
 		"terser": "^5.44.1"
-	},
-	"private": true
+	}
 }

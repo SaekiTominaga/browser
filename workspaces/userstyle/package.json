@@ -1,8 +1,8 @@
 {
 	"name": "@w0s/userstyle",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"lint": "stylelint style/*.css"
-	},
-	"private": true
+	}
 }

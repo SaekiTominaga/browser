@@ -1,5 +1,9 @@
 {
 	"name": "browser",
+	"private": true,
+	"workspaces": [
+		"workspaces/*"
+	],
 	"devDependencies": {
 		"@types/node": "^24.10.1",
 		"@w0s/eslint-config": "^9.3.1",
@@ -8,9 +12,5 @@
 		"globals": "^16.5.0",
 		"prettier": "^3.7.4",
 		"typescript": "^5.9.3"
-	},
-	"private": true,
-	"workspaces": [
-		"workspaces/*"
-	]
+	}
 }
