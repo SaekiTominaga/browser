@@ -6,6 +6,6 @@
 		"noEmit": true,
 
 		/* Language and Environment */
-		"lib": ["ESNext.Array"],
+		"lib": ["ESNext.Array"]
 	}
 }
