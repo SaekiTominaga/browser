@@ -1,10 +1,12 @@
 {
-	"extends": "@w0s/tsconfig",
+	"extends": "@w0s/tsconfig/bundler",
 	"include": ["src/*.user.ts", "@types/*.d.ts"],
 	"compilerOptions": {
+		/* Type Checking */
+		"alwaysStrict": false,
+
 		/* Modules */
-		"module": "es2022",
-		"moduleResolution": "node",
+		"rootDir": "src",
 
 		/* Emit */
 		"outDir": "dist"
