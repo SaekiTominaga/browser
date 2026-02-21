@@ -1,7 +1,11 @@
 {
-	"extends": "@w0s/tsconfig",
+	"extends": "@w0s/tsconfig/node",
 	"include": ["build.ts"],
 	"compilerOptions": {
-		"lib": ["ESNext.Array"]
+		/* Emit */
+		"noEmit": true,
+
+		/* Language and Environment */
+		"lib": ["ESNext.Array"],
 	}
 }
