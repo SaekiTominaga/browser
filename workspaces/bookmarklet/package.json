@@ -7,6 +7,6 @@
 		"lint": "eslint src/*.js build.ts"
 	},
 	"dependencies": {
-		"terser": "^5.44.1"
+		"terser": "^5.46.0"
 	}
 }
