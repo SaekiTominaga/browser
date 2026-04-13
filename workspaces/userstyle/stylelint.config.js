@@ -11,6 +11,6 @@ export default {
 		'selector-class-pattern': null,
 		'selector-id-pattern': null,
 		'selector-max-id': null,
-		'plugin/use-logical-properties-and-values': null,
+		'logical-css/require-logical-properties': null,
 	},
 };
