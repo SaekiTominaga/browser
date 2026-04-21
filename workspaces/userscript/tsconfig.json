@@ -3,12 +3,15 @@
 	"include": ["src/*.user.ts", "@types/*.d.ts"],
 	"compilerOptions": {
 		/* Type Checking */
-		"alwaysStrict": false,
+		"alwaysStrict": false, // ❌ deprecated in TypeScript 6.0
 
 		/* Modules */
 		"rootDir": "src",
 
 		/* Emit */
-		"outDir": "dist"
+		"outDir": "dist",
+
+		/* Others */
+		"ignoreDeprecations": "6.0"
 	}
 }
