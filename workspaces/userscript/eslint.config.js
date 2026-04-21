@@ -1,12 +1,10 @@
-// @ts-check
-
 import w0sConfig from '@w0s/eslint-config';
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
 	...w0sConfig,
 	{
-		ignores: ['@types/*.d.ts', 'dist/*.js'],
+		ignores: ['@types', 'dist'],
 	},
 	{
 		files: ['**/*.ts'],
@@ -25,8 +23,6 @@ export default [
 		},
 		rules: {
 			'line-comment-position': 'off',
-			'no-console': 'off',
-			strict: ['error', 'function'],
 		},
 	},
 ];
