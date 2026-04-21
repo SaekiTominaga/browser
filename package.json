@@ -8,9 +8,9 @@
 		"@types/node": "24.10.1",
 		"@w0s/eslint-config": "9.5.1",
 		"@w0s/stylelint-config": "4.19.1",
-		"@w0s/tsconfig": "2.0.1",
+		"@w0s/tsconfig": "3.0.0",
 		"globals": "17.4.0",
 		"prettier": "3.8.1",
-		"typescript": "5.9.3"
+		"typescript": "6.0.3"
 	}
 }
