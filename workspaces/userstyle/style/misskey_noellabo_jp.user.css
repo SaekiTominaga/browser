@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           のえすきー
 @namespace      https://w0s.jp/
-@version        1.0.0
+@version        1.0.1
 @author         SaekiTominaga
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
 		inset-block-start: initial;
 
 		& > span {
-			animation: none;
+			animation-name: none;
 		}
 	}
 }
