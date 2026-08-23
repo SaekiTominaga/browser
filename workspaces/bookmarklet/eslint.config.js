@@ -1,5 +1,5 @@
-import globals from 'globals';
 import w0sConfig from '@w0s/eslint-config';
+import globals from 'globals';
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
