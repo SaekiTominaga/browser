@@ -3,8 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "tsc",
-		"watch": "tsc -w",
-		"lint": "eslint src/*.user.ts"
+		"build": "tsc & node build/js.ts -d dist",
+		"watch": "tsc -w"
 	}
 }

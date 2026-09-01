@@ -1,6 +1,6 @@
 {
 	"extends": "@w0s/tsconfig/node",
-	"include": ["build.ts"],
+	"include": ["js.ts"],
 	"compilerOptions": {
 		/* Emit */
 		"noEmit": true,
