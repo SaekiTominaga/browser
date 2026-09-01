@@ -3,7 +3,7 @@ import { defineConfig } from 'oxlint';
 
 export default defineConfig({
 	extends: [config],
-	ignorePatterns: ['dist', 'tsconfig.json'],
+	ignorePatterns: ['dist'],
 	overrides: [
 		{
 			files: ['src/*.user.ts'],
