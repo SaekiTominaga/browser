@@ -3,8 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "node build.ts -i src -o dist",
-		"lint": "eslint src/*.js build.ts"
+		"build": "node build/js.ts -i src -o dist"
 	},
 	"dependencies": {
 		"terser": "5.50.0"

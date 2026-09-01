@@ -9,5 +9,5 @@
 		return;
 	}
 
-	window.open(`https://web.archive.org/web/*/${location}`);
+	window.open(`https://web.archive.org/web/*/${location.toString()}`);
 })();

@@ -3,7 +3,7 @@
 // @namespace   https://w0s.jp/
 // @description 「横浜市立図書館蔵書検索ページ」のフォーム操作を改善
 // @author      SaekiTominaga
-// @version     1.0.2
+// @version     1.0.3
 // @match       https://opac.lib.city.yokohama.lg.jp/winj/opac/*
 // ==/UserScript==
 (() => {
@@ -11,7 +11,7 @@
 
 	/* `autocomplete` は常に有効（制作者スクリプト処理が終わった後に実行する必要がある） */
 	window.addEventListener('load', () => {
-		Array.from(document.querySelectorAll('input'))
+		[...document.querySelectorAll('input')]
 			.filter((element) => element.autocomplete === 'off')
 			.forEach((inputElement) => {
 				inputElement.autocomplete = '';
@@ -24,7 +24,7 @@
 	});
 
 	/* 雑誌一覧の発行日による絞り込み */
-	const volumeListFormElement = document.getElementsByName('VolumeListForm')[0];
+	const volumeListFormElement = document.querySelectorAll('[name="VolumeListForm"]')[0];
 	if (volumeListFormElement !== undefined) {
 		/* Enter キー押下で意図しない送信ボタンが submit されてしまうのを防止 */
 		const hiddenSubmitsWrapElement = volumeListFormElement.querySelector('div[style="display:none;"]');
@@ -36,7 +36,7 @@
 			hiddenSubmitsWrapElement.querySelectorAll('input').forEach((inputElement): void => {
 				inputElement.setAttribute('form', FROM_ID);
 			});
-			document.body.insertAdjacentElement('beforeend', hiddenSubmitsWrapElement);
+			document.body.append(hiddenSubmitsWrapElement);
 		}
 
 		/* 正確な日付を指定する必要性は薄いため、年のみの指定で送信できるようにする */
@@ -51,7 +51,7 @@
 			customInputElement.placeholder = 'YYYY';
 			customInputElement.style.inlineSize = '4em';
 			customInputElement.type = 'number';
-			customInputElement.value = originInputElement.value.substring(0, 4);
+			customInputElement.value = originInputElement.value.slice(0, 4);
 			customInputElement.addEventListener('change', () => {
 				const { value } = customInputElement;
 				const valuePad = value.padStart(4, '0');
