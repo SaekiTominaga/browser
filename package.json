@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"lint": "npm run lint:css & npm run lint:js",
-		"lint:css": "stylelint workspaces/**/*.css",
+		"lint:css": "stylelint \"workspaces/**/*.css\"",
 		"lint:js": "oxlint"
 	},
 	"devDependencies": {
