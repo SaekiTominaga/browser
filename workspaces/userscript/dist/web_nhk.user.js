@@ -1,10 +1,9 @@
-"use strict";
 // ==UserScript==
 // @name        NHK ONE
 // @namespace   https://w0s.jp/
 // @description 自動で開かれるモーダルダイアログを消す
 // @author      SaekiTominaga
-// @version     1.0.0
+// @version     1.0.1
 // @match       https://*.web.nhk/*
 // ==/UserScript==
 (() => {
