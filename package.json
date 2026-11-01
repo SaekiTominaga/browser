@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@types/node": "26.4.0",
 		"@w0s/oxlint-config": "1.0.9",
-		"@w0s/stylelint-config": "4.24.0",
+		"@w0s/stylelint-config": "4.26.2",
 		"@w0s/tsconfig": "3.2.2",
 		"oxfmt": "0.70.0",
 		"oxlint": "1.89.0",
