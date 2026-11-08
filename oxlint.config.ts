@@ -8,12 +8,4 @@ export default defineConfig({
 		typeAware: true,
 		typeCheck: true,
 	},
-	overrides: [
-		{
-			files: ['workspaces/userscript/**/*.ts'],
-			rules: {
-				'eslint/no-alert': 'off',
-			},
-		},
-	],
 });
