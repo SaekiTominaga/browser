@@ -10,7 +10,7 @@ export default defineConfig({
 	},
 	overrides: [
 		{
-			files: ['userscript/**/*.ts'],
+			files: ['workspaces/userscript/**/*.ts'],
 			rules: {
 				'eslint/no-alert': 'off',
 			},
