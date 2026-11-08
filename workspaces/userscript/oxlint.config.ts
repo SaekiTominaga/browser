@@ -6,17 +6,18 @@ export default defineConfig({
 	ignorePatterns: ['dist'],
 	overrides: [
 		{
-			files: ['src/*.user.ts'],
-			rules: {
-				'import/unambiguous': 'off',
-				'unicorn/filename-case': 'off',
-				'unicorn/prefer-module': 'off',
-			},
-		},
-		{
 			files: ['build/js.ts'],
 			rules: {
 				'import/no-nodejs-modules': 'off',
+			},
+		},
+		{
+			files: ['src/*.user.ts'],
+			rules: {
+				'eslint/no-alert': 'off',
+				'import/unambiguous': 'off',
+				'unicorn/filename-case': 'off',
+				'unicorn/prefer-module': 'off',
 			},
 		},
 	],
