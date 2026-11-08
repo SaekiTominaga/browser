@@ -4,7 +4,7 @@
 
 | 名称                                                                                                                               | 内容                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| [DeepL 翻訳](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/deepl_com.user.css)             | グローバルナビゲーションを非表示にする       |
+| [DeepL 翻訳](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/deepl_com.user.css)                      | グローバルナビゲーションを非表示にする             |
 | [Facebook](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/facebook_com.user.css)                     | 右カラムを非表示にする                             |
 | [GitHub Gist](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/gist_github_com.user.css)               | 入力フォーム UI 改善                               |
 | [Google 検索](https://github.com/SaekiTominaga/browser/raw/main/workspaces/userstyle/style/google_com_search.user.css)             | 検索結果のリンクは常に下線表示する                 |
