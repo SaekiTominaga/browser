@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           DeepL 翻訳
+@namespace      https://w0s.jp/
+@version        1.0.0
+@author         SaekiTominaga
+==/UserStyle== */
+@-moz-document domain("www.deepl.com") {
+	/* グローバルナビゲーションを非表示にする（マウスオーバーで出るサブナビゲーションがメイン機能に掛かって邪魔すぎる） */
+	.__topbar {
+		& nav {
+			display: none;
+		}
+	}
+}
